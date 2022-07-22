@@ -1,0 +1,166 @@
+@import url('https://googleapics.com/css2?fammilypoppins:wght@200;300;400;500;600;700&display');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(2, 80, 80, 0.082);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+.container {
+  width: 80%;
+  margin: 70px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 30px 25px 20px 40px;
+
+}
+
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.left_side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 14px;
+  position: relative;
+}
+
+.left_side::before {
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+
+.adress_details {
+  margin: 15px;
+  text-align: center;
+}
+
+.topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text_one,
+.text_two {
+  font-size: 15px;
+  color: #aaaab1;
+}
+
+
+
+/* =======================right_side==================== */
+.right_side {
+  margin-left: 80px;
+  width: 80%;
+
+}
+
+.topic_text {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(4, 170, 156, 0.986);
+}
+
+
+.input_box {
+  height: 45px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+input,
+textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #c0e9e7;
+  padding: 0px 15px;
+  resize: none;
+}
+
+.message_area {
+  margin-top: 6px;
+  min-height: 120px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+
+}
+
+.button input[type="button"] {
+  color: #fff;
+  background-color: rgba(4, 170, 156, 0.986);
+  margin-left: 0px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.button input[type="button"]:hover {
+  background: #16776a;
+
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 90%;
+    padding: 30px 35px 40px 35px;
+    margin: 40px 0;
+    height: 100%;
+  }
+
+  .container .content {
+    flex-direction: column-reverse;
+  }
+
+  .left_side::before {
+    display: none;
+  }
+
+  .left_side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}
